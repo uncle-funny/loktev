@@ -1,0 +1,208 @@
+@import url(../css/normalize.css);
+@font-face {
+  font-family: "Georgia Italic";
+  src: url("../fonts/Georgia-Italic.eot");
+  src: url("../fonts/Georgia-Italic.eot?#iefix") format("embedded-opentype");
+  src: url("../fonts/Georgia-Italic.woff") format("woff");
+  src: url("../fonts/Georgia-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+/* Basic Settings */
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.6rem;
+  color: #EEEEEE;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  width: 95%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.header {
+  background-color: #0F0F0F;
+}
+.header-site {
+  height: 15vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.header-logo {
+  -ms-flex-preferred-size: 33%;
+      flex-basis: 33%;
+}
+.header-burger {
+  width: 3rem;
+  height: 4rem;
+  position: relative;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.header-burger .item {
+  display: block;
+  width: 0.6rem;
+  background-color: #fff;
+  position: absolute;
+}
+.header-burger .item-1 {
+  height: 3.2rem;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  left: 0;
+}
+.header-burger .item-2 {
+  height: 4rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.header-burger .item-3 {
+  height: 2.8rem;
+  right: 0;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.header-burger:hover {
+  cursor: pointer;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.header-burger:hover .item-1 {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transform-origin: left bottom;
+          transform-origin: left bottom;
+  height: 3.5rem;
+}
+.header-burger:hover .item-3 {
+  height: 3.5rem;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transform-origin: right bottom;
+          transform-origin: right bottom;
+}
+.header-burger:hover .item-2 {
+  height: 0;
+}
+.header-nav {
+  -ms-flex-preferred-size: 33%;
+      flex-basis: 33%;
+}
+
+.navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.navigation li {
+  margin-right: 4rem;
+}
+.navigation li:last-child {
+  margin-right: 0;
+}
+.navigation li a {
+  color: #EEEEEE;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.navigation li a:hover {
+  color: #a2a2a2;
+}
+
+.main-video {
+  background: radial-gradient(55.65% 50% at 65.49% 50%, rgba(15, 15, 15, 0) 0%, #0F0F0F 85.29%), url(../img/s3.jpg) no-repeat center center/cover;
+  mix-blend-mode: lighten;
+}
+.main-video-inner {
+  height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.main-video-text h1 {
+  margin: 0;
+  font-weight: bold;
+  font-size: 6rem;
+  line-height: 7.3rem;
+}
+.main-video-text p {
+  font-size: 2.4rem;
+  line-height: 2.7rem;
+  font-family: "Georgia Italic";
+  max-width: 50rem;
+}
+.main-video-text .main-button {
+  width: 15rem;
+  height: 4rem;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  border-radius: 7px;
+  font-weight: bold;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.main-video-text .main-button:hover {
+  background-color: #fff;
+  color: #0F0F0F;
+  cursor: pointer;
+}
+.main-video-play:hover {
+  cursor: pointer;
+}
+
+.footer {
+  background-color: #0F0F0F;
+}
+.footer-site {
+  height: 15vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.footer-lg {
+  font-family: "Acme", sans-serif;
+  font-size: 1.8rem;
+  line-height: 2.3rem;
+}
+.footer-lg:hover {
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=style.css.map */
